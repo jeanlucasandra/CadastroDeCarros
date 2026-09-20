@@ -1,39 +1,89 @@
-Programa de cadastro de carros executável, totalmente desenvolvido em Java (Intellij IDEA). Sistema de Cadastro de carros como Cadastro de Carros, Edição de Cadastro, Exclusão de Cadastros, e Listagem de Carros.
+# 🚗 Cadastro de Carros
 
-Envolve ArrayList, switch...case, Getters e Setters, métodos e classes, Private.
+Sistema de cadastro de carros executado no terminal, desenvolvido em **Java** com **IntelliJ IDEA**.
 
-IDE utilizada: Intellij IDEA.
+## ✨ Funcionalidades
 
-COMO EXECUTAR  
+- **Cadastrar** um carro (marca, cor, modelo e valor)
+- **Listar** todos os carros cadastrados
+- **Editar** os dados de um carro já cadastrado
+- **Excluir** um carro da lista
 
-Pré-requisitos
-Java JDK instalado (versão 14 ou superior, por causa do switch moderno usado no código)
-Verifique se está instalado rodando no terminal: java -version e javac -version
-Rodando pelo terminal (cmd/bash)
-Clone o repositório: git clone (URL do repositório)
+## 🧠 Conceitos utilizados
 
-cd (nome-da-pasta-do-projeto)
+- Classes e objetos
+- Encapsulamento ("private", getters e setters)
+- Métodos
+- "ArrayList"
+- "switch...case"
+- Validação de entradas (lista vazia e posição inválida)
 
-Compile os arquivos .java:
+## 🛠️ Tecnologias
+
+- Java (JDK 14 ou superior, por causa do "switch" moderno com "->")
+- IntelliJ IDEA
+
+## 📁 Estrutura do projeto
+
+src/
+├── Main.java               # Menu e interação com o usuário
+├── Carros.java             # Classe que representa um carro
+└── CadastroDeCarros.java   # Lógica de cadastro, listagem, edição e exclusão
+
+## ▶️ Como executar
+
+### Pré-requisitos
+
+Verifique se o Java está instalado:
+
+
+java -version
+javac -version
+
+
+### Pelo terminal
+
+1. Clone o repositório:
+
+
+git clone https://github.com/jeanlucasandra/CadastroDeCarros.git
+
+
+2. Entre na pasta do projeto:
+
+
+cd CadastroDeCarros/src
+
+
+3. Compile os arquivos:
+
 
 javac Carros.java CadastroDeCarros.java Main.java
 
-Isso vai gerar arquivos .class (o bytecode que a JVM executa) na mesma pasta.
 
-Execute o programa:
+4. Execute o programa:
+
 
 java Main
 
-Obs: não coloque .java nem .class no final aqui, só o nome da classe que tem o main.
 
-Interaja com o menu que vai aparecer no terminal.
+> **Obs.:** no comando "java Main", não coloque ".java" nem ".class", apenas o nome da classe que contém o método "main".
 
-Rodando pela IDE (IntelliJ, Eclipse, VS Code, etc.)
-Abra a pasta do projeto na IDE (File > Open, ou "Import Project", dependendo da IDE).
-Certifique-se de que os 3 arquivos (Carros.java, CadastroDeCarros.java, Main.java) estão no mesmo diretório/pacote.
-Abra o arquivo Main.java.
-Clique no botão de "Run" (▶) ao lado do método main, ou use o atalho:
-IntelliJ: Shift + F10
-Eclipse: Ctrl + F11
-VS Code (com extensão Java): botão "Run" que aparece acima do public static void main
-O terminal integrado da IDE vai abrir com o menu do programa.
+### Pela IDE (IntelliJ, Eclipse, VS Code)
+
+1. Abra a pasta do projeto na IDE (**File > Open**).
+2. Confirme que os três arquivos ("Carros.java", "CadastroDeCarros.java" e "Main.java") estão na mesma pasta.
+3. Abra o "Main.java" e clique no botão **Run** (▶) ao lado do método "main", ou use o atalho:
+   - **IntelliJ:** "Shift + F10"
+   - **Eclipse:** "Ctrl + F11"
+   - **VS Code:** botão **Run** acima do "public static void main"
+
+O menu do programa vai aparecer no terminal integrado da IDE.
+
+## 📋 Menu do programa
+
+1 - Cadastrar carro
+2 - Excluir carro
+3 - Listar carros
+4 - Editar carro
+0 - Sair
